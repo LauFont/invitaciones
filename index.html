@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d7a194a66b.js" crossorigin="anonymous"></script>
+  <title>Mis Quince | Sofia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+</html>
+
+<body>
+  <a id="top"></a>
+  <header class="header">
+    <section class="container1">
+      <div class="logo">
+        <img src="img/logo_corona.png" alt="Logo corona" class="logo-img">
+        <a href="index.html">Sofia</a>
+      </div>
+      <button class="menu-btn" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+      </button>
+      <nav class="menu">
+        <a href="#mihistoria">Mi historia</a>
+        <a href="#confirmar">Confirmar asistencia</a>
+        <a href="#comollegar">¿Cómo llegar?</a>
+        <a href="#dresscode">Dress code</a>
+        <a href="#cancion">Sugerir canción</a>
+        <a href="#fotos">Etiquetá tus fotos</a>
+        <a href="#regalos">Regalos</a>
+        <a href="#gracias">Agradecimientos</a>
+      </nav>
+    </section>
+  </header>
+  <section class="banner">
+    <button class="music-btn" aria-label="Reproducir música">
+      <i class="fa-solid fa-music"></i>
+    </button>
+    <audio id="bg-music" src="musica/happiness-upbeat-150907.mp3"></audio>
+    <video class="banner-video" autoplay loop muted playsinline>
+      <source src="videos/1113870_Marriage_Bouquet_3840x2160.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h3><b>Te invito a</b></h3>
+      <h1>
+        <span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000"
+          data-words='["MIS QUINCE AÑOS", "UNA FIESTA MÁGICA"]'></span>
+      </h1>
+      <h3 id="fecha-evento">
+        <span>04 • 10 • 2025</span>
+      </h3>
+    </div>
+    <img src="img/flores-doradas.png" alt="Decoración circular" class="countdown-flowers">
+    <div class="countdown-circle-outline circle1"></div>
+    <div class="countdown-circle-outline circle2"></div>
+    <section class="countdown countdown-hero">
+      <h2>Faltan</h2>
+      <div id="countdown"></div>
+    </section><br><br><br><br><br><br><br><br>
+
+    <section id="mihistoria" class="about section container full-screen">
+      <h2 class="section-title mi-historia-titulo">Mi Historia</h2><br>
+      <div class="mi-historia-textos">
+        <p>Desde muy pequeña tengo dos grandes pasiones... patinar y los peluditos de cuatro patas, y andando sobre
+          ruedas
+          llegué a mis 15 años. Si hay algo que aprendí, es que es importante celebrar cada momento rodeados de las
+          personas que nos llenan el corazón...</p>
+        <p>Por eso, quiero compartir con vos este momento tan especial. Será una fiesta mágica, llena de sorpresas y
+          alegría, donde cada detalle cuenta. Espero que puedas acompañarme en esta celebración única, donde la música,
+          la diversión y el amor estarán presentes en cada rincón.</p>
+        <p id="galeria2">
+      </div>
+      <section class="galeria">
+        <a href="#image1"><img src="img/horiz-2.jpg" alt=""></a>
+        <a href="#image2"><img src="img/horiz-3.jpg" alt=""></a>
+        <a href="#image3"><img src="img/horiz-1.jpg" alt=""></a>
+        <a href="#image4"><img src="img/horiz-4.jpg" alt=""></a>
+        <a href="#image5"><img src="img/vert-3.jpg" alt=""></a>
+        <a href="#image6"><img src="img/vert-1.png" alt=""></a>
+        <a href="#image7"><img src="img/vert-2.jpg" alt=""></a>
+        <a href="#image8"><img src="img/vert-3.jpg" alt=""></a>
+      </section>
+    </section>
+    <a href="#top" class="back-to-top" aria-label="Volver al inicio">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <article class="light-box" id="image1">
+      <a href="#image8" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/horiz-1.jpg" alt="">
+      <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image2">
+      <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/horiz-2.jpg" alt="">
+      <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image3">
+      <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/horiz-3.jpg" alt="">
+      <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image4">
+      <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/horiz-4.jpg" alt="">
+      <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image5">
+      <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/vert-1.png" alt="">
+      <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image6">
+      <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/vert-2.jpg" alt="">
+      <a href="#image7" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image7">
+      <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/vert-3.jpg" alt="">
+      <a href="#image8" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+    <article class="light-box" id="image8">
+      <a href="#image7" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="img/vert-3.jpg" alt="">
+      <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#galeria" class="close">X</a>
+    </article>
+
+    <section class="rsvp-bg-separator">
+      <section class="rsvp-location-bg">
+        <div class="rsvp-location-flex">
+          <!-- Caja Confirmación -->
+          <div class="rsvp" id="confirmar">
+            <img src="icons/calendar.svg" alt="Confirmar asistencia" class="fiesta-icon1">
+            <h2 class="section-title">Confirmá tu asistencia</h2>
+            <p>
+              Espero que puedas acompañarme.<br>
+              ¡Confirmá tu asistencia antes del 20/09/2025!
+            </p>
+            <div class="location-buttons">
+              <a href="https://forms.gle/44m2prmYXzvjsvVQ6" class="rsvp-btn" target="_blank">RSVP</a>
+              <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Fiesta+de+Umma&dates=20251004T210000Z/20251005T050000Z&details=Fiesta+de+15+Años+de+Umma&location=Ruta+Nacional+205+Km114,5,+B7240+Lobos,+Provincia+de+Buenos+Aires"
+                class="rsvp-btn" target="_blank">Agendar</a>
+            </div>
+            <div class="rsvp-info">
+              <hr class="rsvp-line">
+            </div>
+          </div>
+          <!-- Caja Fiesta -->
+          <div class="location-box" id="comollegar">
+            <img src="icons/location.svg" alt="Fiesta" class="fiesta-icon1">
+            <h2 class="section-title">Fiesta</h2>
+            <p class="location-address">
+              Ruta Nacional 205 Km114,5, <br>
+              B7240 Lobos, Provincia de Buenos Aires
+            </p>
+            <div class="location-buttons">
+              <a href="https://maps.app.goo.gl/BjtBPfagdCHamfFs5" class="location-btn" target="_blank">¿Cómo llegar?</a>
+              <a href="https://traslado-ficticio.com" class="location-btn" target="_blank">¿Necesitás traslado?</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br><br>
+      <a href="#top" class="back-to-top" aria-label="Volver al inicio">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      <section class="rsvp-location-bg">
+        <div class="rsvp-location-flex">
+          <!-- Caja vestimenta -->
+          <div class="rsvp" id="dresscode">
+            <img src="icons/dress.svg" alt="dresscode" class="fiesta-icon">
+            <h2 class="section-title">Dress Code</h2>
+            <p>
+              Formal y elegante.<br>
+              Por favor no usar rojo.
+            </p>
+            <div class="location-buttons">
+              <a href="https://pin.it/22co7b1l6" class="rsvp-btn" target="_blank">Sugencias de estilo</a>
+            </div>
+            <div class="rsvp-info">
+              <hr class="rsvp-line">
+            </div>
+          </div>
+          <!-- Caja sugerir canción -->
+          <div class="location-box" id="cancion">
+            <img src="icons/musica - copia.svg" alt="Musica" class="fiesta-icon">
+            <h2 class="section-title">Música</h2>
+            <p class="location-address">
+              ¿Qué canciones son infaltables? <br>
+              Ayudame con la selección de canciones
+            </p>
+            <div class="location-buttons">
+              <a href="https://open.spotify.com/intl-es/artist/13Aw4kvMgRhqQQndVGx9dc" class="location-btn"
+                target="_blank">Ir a Spotify</a>
+              <a href="https://traslado-ficticio.com" class="location-btn" target="_blank">Sugerir canción</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br><br>
+      <a href="#top" class="back-to-top" aria-label="Volver al inicio">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      <section class="rsvp-location-bg">
+        <div class="rsvp-location-flex">
+          <!-- Caja Regalos -->
+          <div class="rsvp" id="fotos">
+            <img src="icons/photos.svg" alt="fotos" class="fiesta-icon">
+            <h2 class="section-title">Fotos</h2>
+            <p>
+              ¡Preparate para mi fiesta!<br>
+              Etiquetame en Instagram con mi #hashtag en tus fotos y videos.
+            </p>
+            <div class="location-buttons">
+              <a href="https://www.instagram.com/" class="rsvp-btn" target="_blank">#15sofia</a>
+              <a href="https://www.instagram.com/" class="rsvp-btn" target="_blank">Ver Fotos</a>
+            </div>
+            <div class="rsvp-info">
+              <hr class="rsvp-line">
+            </div>
+          </div>
+          <!-- Caja Fiesta -->
+          <div class="location-box" id="regalos">
+            <img src="icons/gift-animado.gif" alt="Regalos" class="fiesta-icon">
+            <h2 class="section-title">Regalos</h2>
+            <p class="location-address">
+              El mejor regalo es que me acompañes en mi gran día,<br>
+              pero si deseás hacerme un regalo aquí te dejo los datos.
+            </p><br>
+            <div class="location-buttons">
+              <a href="https://www.mercadopago.com.ar" class="location-btn" target="_blank">Cuenta</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a href="#top" class="back-to-top" aria-label="Volver al inicio">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </section>
+
+    <section id="testimonios">
+      <article class="hero-image" id="gracias"
+        style="--hero-image: url('img/image-hero-3.png'); --hero-attachment: scroll;">
+        <aside class="hero-image-opacity">
+          <div class="hero-image-content">
+            <div class="container">
+              <article class="carousel">
+                <input type="radio" name="slides" id="slide-1" checked>
+                <input type="radio" name="slides" id="slide-2">
+                <ul class="slides">
+                  <li class="slide">
+                    <img class="avatar" src="img/circular2.png" alt="foto 1">
+                    <blockquote>"
+                      Los momentos felices de la vida, se tornan geniales si tenemos la suerte de compartirlo con la
+                      familia y amigos más queridos, por eso te espero para que festejemos juntos.
+                      "</blockquote>
+                    <h4>Te espero</h4>
+                  </li>
+                  <li class="slide">
+                    <img class="avatar" src="img/circular.png" alt="foto 2">
+                    <blockquote>""A cada uno de ustedes, gracias por compartir este momento conmigo, su presencia hará
+                      de ese día algo aún más especial."
+                    </blockquote>
+                    <h2 class="text-first-color">Sofia</h2>
+                  </li>
+
+                </ul>
+                <aside class="slides-nav">
+                  <label for="slide-1" id="dot-1"></label>
+                  <label for="slide-2" id="dot-2"></label>
+                </aside>
+              </article>
+            </div>
+            <a href="#top" class="back-to-top" aria-label="Volver al inicio">
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+          </div>
+
+        </aside>
+      </article>
+    </section>
+
+
+    <footer class="footer">
+      sitio diseñado por <a href="mailto:laurafont.studio@gmail.com" target="_blank"
+        rel="noopener">laurafont.studio@gmail.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
