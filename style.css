@@ -192,7 +192,8 @@ button {
   top: auto;
   transform: none;
   z-index: 1100;
-  width: 60px;
+  width: 100%;
+  max-width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
