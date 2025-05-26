@@ -23,7 +23,7 @@
   --font-text: 'Comfortaa', cursive, sans-serif;
   --max-width: 1200px;
   --header-height: 4rem;
-  
+
 }
 
 /* ********** Fonts ********** */
@@ -187,16 +187,18 @@ button {
   cursor: pointer;
   background-color: var(--second-color);
   position: fixed;
-  left: 50%;
+  right: 0;
   bottom: 0;
-  transform: translateX(-50%);
+  left: auto;
+  top: auto;
+  transform: none;
   z-index: 1100;
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -228,6 +230,17 @@ button {
   color: var(--third-color);
   border-bottom: 2px solid var(--second-color);
   background: none;
+}
+
+@media (max-width: 1023px) {
+  .menu a:hover,
+  .menu a:focus {
+    background: var(--accent-gold-alpha);
+    color: var(--second-color);
+    border-bottom: none;
+    border-radius: 0.5em;
+    transition: background 0.2s, color 0.2s;
+  }
 }
 
 .header {
