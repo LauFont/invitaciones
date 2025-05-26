@@ -226,7 +226,7 @@ button {
 .menu a:hover,
 .menu a:focus {
   color: var(--third-color);
-  border-bottom: 2px solid var(--third-color);
+  border-bottom: 2px solid var(--second-color);
   background: none;
 }
 
@@ -238,7 +238,7 @@ button {
   padding: 1rem;
   width: 100%;
   height: var(--header-height);
-  background-color: #F7F7F2;
+  background-color: var(--first-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
