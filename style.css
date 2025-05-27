@@ -346,22 +346,29 @@ button {
   color: var(--link-color);
 }
 
-.banner {
-  position: relative;
-  /* Asegura el posicionamiento absoluto del botón */
-}
 
 /* ********** Countdown ********** */
 
+.countdown-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+  background: none;
+  bottom: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .countdown-hero {
   position: absolute;
   left: 50%;
-  bottom: 2.5rem;
+  top: 60%;   /* O ajusta según lo que necesites */
+  bottom: 0rem;
   transform: translateX(-50%);
-  z-index: 4;
-  padding: 4.5em 4.5em;
-  /* Aumenta el padding para que el círculo no tape el texto */
+  z-index: 6;
+  padding: 4.5em 4.5em;  /* Aumenta el padding para que el círculo no tape el texto */
   text-align: center;
   min-width: 260px;
   max-width: 95vw;
@@ -374,12 +381,12 @@ button {
 .countdown-flowers {
   position: absolute;
   left: 50%;
-  top: 85%;   /* O ajusta según lo que necesites */
+  top: 90%;   /* O ajusta según lo que necesites */
   height: auto;
   transform: translate(-50%, -10%);   /* Centrada y sobresaliendo hacia abajo */
   pointer-events: none;
-  z-index: 3;   /* Debajo del countdown, encima del video */
-  overflow: hidden;
+  z-index: 5;   /* Debajo del countdown, encima del video */
+  overflow: visible;
   width: 90vw;
   max-width: 520px;
   padding: 0 1rem;
@@ -389,11 +396,9 @@ button {
 
 .countdown-circle-outline {
   position: absolute;
-  left: 50%;
-  /* El top se ajusta para que queden bajo las flores */
-  top: 50%;
-  border: 1.5px solid var(--white-alpha-color);
-  /* Borde blanco y fino */
+  left: 50%;   /* El top se ajusta para que queden bajo las flores */
+  top: 60%;
+  border: 1.5px solid var(--white-alpha-color);   /* Borde blanco y fino */
   border-radius: 50%;
   background: transparent;
   pointer-events: none;
@@ -426,9 +431,10 @@ button {
   margin: 0 0 0.2em 0;
   font-size: 2em;
   font-family: Dantina, cursive, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--first-color);
+  z-index: 100;
 }
 
 #countdown {
@@ -479,33 +485,37 @@ button {
 
 /* Responsive para tablets y móviles */
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
   .countdown-hero {
-    padding: 2em 1em;
-    min-width: 180px;
+    padding: 1em 1em;
+    min-width: 200px;
     max-width: 98vw;
     font-size: 0.95em;
+  }
+
+
+  .countdown-flowers {
+    overflow: visible;
   }
 }
 
 @media (max-width: 590px) {
-  .countdown-wrapper {
-    padding: 1.2em 0.2em;
-    min-width: 120px;
-    max-width: 99vw;
-    font-size: 0.85em;
-    top: 48%;
-  }
-  #countdown {
-  font-size: 1em;
-  gap: 1em;
-}
 
-.countdown-number {
-  width: 42px;
-  height: 42px;
-  font-size: 1.1em;
-}
+
+  #countdown {
+    font-size: 1em;
+    gap: 1em;
+  }
+
+  .countdown-flowers {
+    overflow: visible;
+  }
+
+  .countdown-number {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1em;
+  }
 }
 
 /* ***** OSCILACION **** **/
@@ -523,6 +533,7 @@ button {
 }
 
 /* ********** Banner  ********** */
+
 @keyframes banner {
 
   0%,
@@ -566,7 +577,7 @@ button {
 
 .banner-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: 100%;
   color: var(--white-color);
   background: rgba(43, 43, 43, 0.3);
@@ -574,10 +585,10 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 0;
-  /* Aumenta este valor para subir el texto */
+  padding-bottom: 0;  /* Aumenta este valor para subir el texto */
   padding-left: 4vw;
   padding-top: 6vw;
+  overflow: visible;
 }
 
 
@@ -633,12 +644,14 @@ button {
 
 
 /* ********** Galería y Mi Historia ********** */
-.section-title.mi-historia-titulo {
+
+
+.section-title-mi-historia-titulo {
   font-family: 'Dantina', cursive, sans-serif;
   color: var(--second-color);
   font-size: 3rem;
   text-align: center;
-  margin: 2rem auto 1.5rem auto;
+  margin: 15rem auto 1.5rem auto;
   width: auto;
   max-width: 100%;
   background: none;
