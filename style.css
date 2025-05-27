@@ -364,11 +364,13 @@ button {
 .countdown-hero {
   position: absolute;
   left: 50%;
-  top: 60%;   /* O ajusta según lo que necesites */
+  top: 60%;
+  /* O ajusta según lo que necesites */
   bottom: 0rem;
   transform: translateX(-50%);
   z-index: 6;
-  padding: 4.5em 4.5em;  /* Aumenta el padding para que el círculo no tape el texto */
+  padding: 4.5em 4.5em;
+  /* Aumenta el padding para que el círculo no tape el texto */
   text-align: center;
   min-width: 260px;
   max-width: 95vw;
@@ -381,13 +383,16 @@ button {
 .countdown-flowers {
   position: absolute;
   left: 50%;
-  top: 90%;   /* O ajusta según lo que necesites */
+  top: 90%;
+  /* O ajusta según lo que necesites */
   height: auto;
-  transform: translate(-50%, -10%);   /* Centrada y sobresaliendo hacia abajo */
+  transform: translate(-50%, -10%);
+  /* Centrada y sobresaliendo hacia abajo */
   pointer-events: none;
-  z-index: 5;   /* Debajo del countdown, encima del video */
+  z-index: 5;
+  /* Debajo del countdown, encima del video */
   overflow: visible;
-  width: 90vw;
+  width: 100vw;
   max-width: 520px;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -396,9 +401,11 @@ button {
 
 .countdown-circle-outline {
   position: absolute;
-  left: 50%;   /* El top se ajusta para que queden bajo las flores */
+  left: 50%;
+  /* El top se ajusta para que queden bajo las flores */
   top: 60%;
-  border: 1.5px solid var(--white-alpha-color);   /* Borde blanco y fino */
+  border: 1.5px solid var(--white-alpha-color);
+  /* Borde blanco y fino */
   border-radius: 50%;
   background: transparent;
   pointer-events: none;
@@ -585,7 +592,8 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 0;  /* Aumenta este valor para subir el texto */
+  padding-bottom: 0;
+  /* Aumenta este valor para subir el texto */
   padding-left: 4vw;
   padding-top: 6vw;
   overflow: visible;
@@ -672,12 +680,18 @@ button {
   .section-title.mi-historia-titulo {
     font-size: 2rem;
   }
+
+  .mi-historia-textos {
+    margin: 10rem 3rem 2rem 2rem;
+    text-align: center;
+    max-width: 300px;
+  }
 }
 
 .mi-historia-textos {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
 }
 
 #galeria2 {
@@ -731,6 +745,10 @@ button {
 @media (max-width: 600px) {
   .galeria {
     grid-template-columns: 1fr;
+  }
+
+  .section-title-mi-historia-titulo {
+    font-size: 2rem;
   }
 }
 
