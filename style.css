@@ -661,7 +661,7 @@ button {
   text-align: center;
   margin: 15rem auto 1.5rem auto;
   width: auto;
-  max-width: 100%;
+  max-width: 90%;
   background: none;
   border: none;
   letter-spacing: 2px;
@@ -672,13 +672,13 @@ button {
 
 @media (max-width: 900px) {
   .section-title.mi-historia-titulo {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .section-title.mi-historia-titulo {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .mi-historia-textos {
@@ -691,22 +691,9 @@ button {
 .mi-historia-textos {
   text-align: center;
   max-width: 900px;
-  margin: 0 auto 1.5rem auto;
+  margin: 1.5rem auto 1.5rem auto;
 }
 
-#galeria2 {
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.linea {
-  background-color: var(--black-color);
-  height: 5px;
-  width: 100%;
-  display: block;
-}
 
 .galeria {
   display: grid;
