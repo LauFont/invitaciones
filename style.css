@@ -9,7 +9,7 @@
   --accent-gold: #dbac12;
   --accent-gold-alpha: rgba(212, 175, 55, 0.556);
   --white-color: #FFFFFF;
-  --gray-light-color: #F7E7CE;
+  --gray-light-color: #dcdbdb;
   --gray-color: #edede6;
   --gray-dark-color: #2B2B2B;
   --black-color: #2B2B2B;
@@ -18,7 +18,7 @@
   --text-color: #2B2B2B;
   --alternative-color: #b48a78;
   --white-alpha-color: rgba(251, 247, 247, 0.812);
-  --black-alpha-color: rgba(43, 43, 43, 0.7);
+  --black-alpha-color: rgba(43, 43, 43, 0.90);
   --font-title: 'Dancing Script', cursive;
   --font-text: 'Comfortaa', cursive, sans-serif;
   --max-width: 1200px;
@@ -622,7 +622,7 @@ button {
   font-family: 'Comfortaa', cursive, sans-serif;
   font-weight: 700;
   margin: 0 0 0.5em 0;
-  color: #fff;
+  color: var(--white-color);
 }
 
 
@@ -962,6 +962,202 @@ button {
   transform: scale(1.05);
   box-shadow: 0 4px 18px var(--second-alpha-color);
 }
+
+/* sección modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--black-alpha-color);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.modal-contenido {
+  background: var(--white-color);
+  margin: auto;
+  padding: 20px 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px var(--black-alpha-color);
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.modal-contenido .section-title {
+  font-family: 'Dantina', cursive, sans-serif;
+  color: var(--second-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.estilos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.estilos-grid img {
+  width: 100%;
+  height: 300px;
+  /* Ajustable según tus imágenes */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Hover en PC */
+.estilos-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Toque en móviles */
+@media (hover: none) and (pointer: coarse) {
+  .estilos-grid img:active {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsivo para tablets y móviles */
+@media (max-width: 768px) {
+  .estilos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .estilos-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .estilos-grid img {
+    height: 180px;
+  }
+}
+
+.modal-contenido {
+  padding: 10px 10px;
+}
+
+.icono-modal-cancion {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.input-cancion,
+.input-artista {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 8px auto;
+  border: 2px solid var(--title-color);
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-cancion::placeholder,
+.input-artista::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.modal-form-rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.modal-rsvp-group {
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.modal-rsvp-group label {
+  display: block;
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.modal-hint {
+  font-size: 0.85em;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+
+/* Botón de envío */
+.modal-btn-gris {
+  background-color: var(--title-color);
+  color: white;
+  border: none;
+  padding: 12px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  text-decoration: none;
+}
+
+.modal-btn-gris:hover {
+  background-color: var(--gray-dark-color)
+}
+
+.modal-cancion form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.input-cancion,
+.input-artista {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 18px;
+  border: 2px solid var(--title-color);
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.input-cancion::placeholder,
+.input-artista::placeholder {
+  color: var(--gray-light-color);
+  font-style: italic;
+  opacity: 1;
+}
+
+/* ********** RSVP  ********** */
+
+
 
 /* Responsive para móviles */
 @media (max-width: 900px) {

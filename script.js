@@ -96,3 +96,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// ===================
+// Modales: Dress Code
+// ===================
+
+function abrirModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = 'block';
+  }
+}
+
+function cerrarModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = 'none';
+  }
+}
+
+// Cierra el modal si el usuario hace clic fuera del contenido
+window.addEventListener('click', function(event) {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
+
+function enviarFormulario() {
+  setTimeout(() => {
+    alert('¡Gracias por tu respuesta!');
+  }, 300);
+}
+// =================== //

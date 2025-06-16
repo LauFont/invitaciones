@@ -65,15 +65,15 @@
         <span>04 • 10 • 2025</span>
       </h3>
       <div>
- </section>
-       <section class="countdown-container">
-          <img src="img/flores-doradas.png" alt="Decoración circular" class="countdown-flowers">
-          <div class="countdown-circle-outline circle1"></div>
-          <div class="countdown-circle-outline circle2"></div>
-          <div class="countdown-hero">
-            <h2>Faltan</h2>
-            <div id="countdown"></div>
-          </section>
+  </section>
+  <section class="countdown-container">
+    <img src="img/flores-doradas.png" alt="Decoración circular" class="countdown-flowers">
+    <div class="countdown-circle-outline circle1"></div>
+    <div class="countdown-circle-outline circle2"></div>
+    <div class="countdown-hero">
+      <h2>Faltan</h2>
+      <div id="countdown"></div>
+  </section>
 
   <section id="mihistoria" class="section-mi-historia">
     <h2 class="section-title-mi-historia-titulo">Mi Historia</h2><br>
@@ -152,8 +152,11 @@
     </a>
 
     <section class="rsvp-bg-separator">
+
+      <!-- SECCIÓN: Confirmación y Fiesta -->
       <section class="rsvp-location-bg">
         <div class="rsvp-location-flex">
+
           <!-- Caja Confirmación -->
           <div class="rsvp" id="confirmar">
             <img src="icons/calendar.svg" alt="Confirmar asistencia" class="fiesta-icon1">
@@ -163,7 +166,7 @@
               ¡Confirmá tu asistencia antes del 20/09/2025!
             </p>
             <div class="location-buttons">
-              <a href="https://forms.gle/44m2prmYXzvjsvVQ6" class="rsvp-btn" target="_blank">RSVP</a>
+              <button class="rsvp-btn" onclick="abrirModal('modalConfirmar')">RSVP</button>
               <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Fiesta+de+Umma&dates=20251004T210000Z/20251005T050000Z&details=Fiesta+de+15+Años+de+Umma&location=Ruta+Nacional+205+Km114,5,+B7240+Lobos,+Provincia+de+Buenos+Aires"
                 class="rsvp-btn" target="_blank">Agendar</a>
             </div>
@@ -171,6 +174,7 @@
               <hr class="rsvp-line">
             </div>
           </div>
+
           <!-- Caja Fiesta -->
           <div class="location-box" id="comollegar">
             <img src="icons/location.svg" alt="Fiesta" class="fiesta-icon1">
@@ -180,64 +184,60 @@
               B7240 Lobos, Provincia de Buenos Aires
             </p>
             <div class="location-buttons">
-              <a href="https://maps.app.goo.gl/BjtBPfagdCHamfFs5" class="location-btn" target="_blank">¿Cómo
-                llegar?</a>
-              <a href="https://traslado-ficticio.com" class="location-btn" target="_blank">¿Necesitás traslado?</a>
+              <a href="https://maps.app.goo.gl/BjtBPfagdCHamfFs5" class="location-btn" target="_blank">¿Cómo llegar?</a>
             </div>
           </div>
+
         </div>
       </section>
-      <br><br>
       <a href="#top" class="back-to-top" aria-label="Volver al inicio">
         <i class="fa-solid fa-chevron-up"></i>
       </a>
+      <!-- SECCIÓN: Dress code y Música -->
       <section class="rsvp-location-bg">
         <div class="rsvp-location-flex">
+
           <!-- Caja vestimenta -->
           <div class="rsvp" id="dresscode">
             <img src="icons/dress.svg" alt="dresscode" class="fiesta-icon">
             <h2 class="section-title">Dress Code</h2>
-            <p>
-              Formal y elegante.<br>
-              Por favor no usar rojo.
-            </p>
+            <p>Formal y elegante.<br>Por favor no usar rojo.</p>
             <div class="location-buttons">
-              <a href="https://pin.it/22co7b1l6" class="rsvp-btn" target="_blank">Sugencias de estilo</a>
+              <button class="rsvp-btn" onclick="abrirModal('modalEstilo')">Sugerencias de estilo</button>
             </div>
             <div class="rsvp-info">
               <hr class="rsvp-line">
             </div>
           </div>
+
           <!-- Caja sugerir canción -->
           <div class="location-box" id="cancion">
             <img src="icons/musica - copia.svg" alt="Musica" class="fiesta-icon">
             <h2 class="section-title">Música</h2>
-            <p class="location-address">
-              ¿Qué canciones son infaltables? <br>
-              Ayudame con la selección de canciones
-            </p>
+            <p class="location-address">¿Qué canciones son infaltables?<br>Ayudame con la selección de canciones</p>
             <div class="location-buttons">
               <a href="https://open.spotify.com/intl-es/artist/13Aw4kvMgRhqQQndVGx9dc" class="location-btn"
                 target="_blank">Ir a Spotify</a>
-              <a href="https://traslado-ficticio.com" class="location-btn" target="_blank">Sugerir canción</a>
+              <button class="location-btn" onclick="abrirModal('modalCancion')">Sugerir canción</button>
             </div>
           </div>
+
         </div>
       </section>
-      <br><br>
+
       <a href="#top" class="back-to-top" aria-label="Volver al inicio">
         <i class="fa-solid fa-chevron-up"></i>
       </a>
+
+      <!-- SECCIÓN: Fotos y Regalos -->
       <section class="rsvp-location-bg">
         <div class="rsvp-location-flex">
-          <!-- Caja Regalos -->
+
+          <!-- Caja Fotos -->
           <div class="rsvp" id="fotos">
             <img src="icons/photos.svg" alt="fotos" class="fiesta-icon">
             <h2 class="section-title">Fotos</h2>
-            <p>
-              ¡Preparate para mi fiesta!<br>
-              Etiquetame en Instagram con mi #hashtag en tus fotos y videos.
-            </p>
+            <p>¡Preparate para mi fiesta!<br>Etiquetame en Instagram con mi #hashtag en tus fotos y videos.</p>
             <div class="location-buttons">
               <a href="https://www.instagram.com/" class="rsvp-btn" target="_blank">#15sofia</a>
               <a href="https://www.instagram.com/" class="rsvp-btn" target="_blank">Ver Fotos</a>
@@ -246,7 +246,8 @@
               <hr class="rsvp-line">
             </div>
           </div>
-          <!-- Caja Fiesta -->
+
+          <!-- Caja Regalos -->
           <div class="location-box" id="regalos">
             <img src="icons/gift-animado.gif" alt="Regalos" class="fiesta-icon">
             <h2 class="section-title">Regalos</h2>
@@ -255,55 +256,122 @@
               pero si deseás hacerme un regalo aquí te dejo los datos.
             </p><br>
             <div class="location-buttons">
-              <a href="https://www.mercadopago.com.ar" class="location-btn" target="_blank">Cuenta</a>
+              <button class="location-btn" onclick="abrirModal('modalRegalos')">Cuenta Bancaria</button>
             </div>
           </div>
+
         </div>
       </section>
+
+      <!-- MODALES -->
+      <!-- Modal Confirmar Asistencia -->
+      <div id="modalConfirmar" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal('modalConfirmar')">&times;</span>
+          <img src="icons/calendar.svg" alt="icono calendario" class="icono-modal-cancion">
+          <h2 class="section-title">Confirmar asistencia</h2>
+          <form class="modal-form-rsvp"
+            action="https://script.google.com/macros/s/AKfycbxhhaxp261Y4J7mbDPVO0l7IRLykEHWoyYW-2LCViYYLPskK24r8uW8tnpc3Tqdx2qDcQ/exec"
+            method="POST" target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalConfirmar');">
+            <!-- 💬 Nombre -->
+            <input type="text" name="NOMBRE Y APELLIDO" placeholder="Nombre y Apellido" class="input-cancion" required>
+
+            <!-- 🎉 Confirmación de asistencia -->
+            <div class="modal-rsvp-group">
+              <p>¿Asistirás?</p>
+              <label><input type="radio" name="CONFIRMACIÓN" value="Sí, ahí estaré 🥳" required> Sí, ahí estaré
+                🥳</label>
+              <label><input type="radio" name="CONFIRMACIÓN" value="No podré asistir 😭"> No podré asistir 😭</label>
+            </div>
+
+            <!-- 🍽️ Restricción alimentaria -->
+            <div class="modal-rsvp-group">
+              <p>¿Alguna restricción alimentaria?</p>
+              <label><input type="radio" name="RESTRICCIÓN" value="No" required> No</label>
+              <label><input type="radio" name="RESTRICCIÓN" value="Sí, soy celíaco"> Sí, soy celíaco</label>
+              <label><input type="radio" name="RESTRICCIÓN" value="Sí, soy vegano"> Sí, soy vegano</label>
+              <label><input type="radio" name="RESTRICCIÓN" value="Sí, soy vegetariano"> Sí, soy vegetariano</label>
+            </div>
+
+            <!-- 🚌 Necesitás traslado -->
+            <div class="modal-rsvp-group">
+              <p>¿Necesitás traslado?</p>
+              <label><input type="radio" name="TRASLADO" value="Sí" required> Sí, reservame un asiento.</label>
+              <label><input type="radio" name="TRASLADO" value="No, iré por mi cuenta"> No, iré por mi cuenta</label>
+            </div>
+            <button type="submit" class="modal-btn-gris">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Iframe oculto -->
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+      <!-- Modal Estilo -->
+      <div id="modalEstilo" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal('modalEstilo')">&times;</span>
+          <img src="icons/dress.svg" alt="Icono música" class="icono-modal-cancion">
+          <h2 class="section-title">Sugerencias de estilos</h2>
+          <div class="estilos-grid">
+            <img src="img/drees code/dress-green-removebg-preview.png" alt="Estilo 1">
+            <img src="img/drees code/vestido-de-noche-negro-removebg-preview.png" alt="Estilo 2">
+            <img src="img/drees code/vestido-corto-brillante.png" alt="Estilo 3">
+            <img src="img/drees code/hombre-con-esmoquin-removebg-preview.png" alt="Estilo 4">
+            <img src="img/drees code/hombre-traje-corbata.png" alt="Estilo 5">
+            <img src="img/drees code/hombre-traje-azul.png" alt="Estilo 6">
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Sugerir Canción -->
+      <div id="modalCancion" class="modal">
+        <div class="modal-contenido modal-cancion">
+          <span class="cerrar" onclick="cerrarModal('modalCancion')">&times;</span>
+          <img src="icons/musica.svg" alt="Icono música" class="icono-modal-cancion">
+          <h2 class="section-title cancion-titulo">Sugerir canciones</h2>
+          <hr class="rsvp-line">
+
+          <form id="cancionForm"
+            action="https://script.google.com/macros/s/AKfycbwWPqIKsz7w2cTyywAKXs8cuqbz0BLsh1New1SR1UVnhADVAnwwGgIYJMka6-_Gm--vAQ/exec"
+            method="POST" target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalCancion');">          
+            <p class="cancion-texto">¡Ayudame a crear la mejor playlist para mi fiesta!</p>
+            <input type="text" name="CANCIÓN SUGERIDA" placeholder="Nombre de la canción" required
+              class="input-artista">
+            <input type="text" name="ARTISTA" placeholder="Nombre del artista" required class="input-artista">
+
+            <button type="submit" class="modal-btn-gris">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Iframe oculto -->
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+      <!-- Modal Regalos (corregido) -->
+      <div id="modalRegalos" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal('modalRegalos')">&times;</span>
+          <img src="icons/mail.svg" alt="Icono regalos" class="icono-modal-cancion">
+          <h2 class="section-title">Datos para regalos</h2>
+          <h3>Billetera digital</h3>
+          <p>Enviá el dinero desde el siguiente link:</p>
+          <a href="https://www.mercadopago.com.ar/" class="modal-btn-gris" target="_blank">ENVIAR DINERO</a>
+          <br>
+          <hr>
+          <h3>Datos Bancarios</h3>
+          <p><strong>CBU/ALIAS:</strong> juan.cumple.mp</p>
+          <p><strong>N° de Cuenta:</strong> 1234-5678-9012</p>
+          <p><strong>Titular:</strong> Juan Fulano</p>
+          <p><strong>Banco:</strong> Banco del Amor</p>
+          <button class="location-btn" onclick="cerrarModal('modalRegalos')">CERRAR</button>
+        </div>
+      </div>
+
       <a href="#top" class="back-to-top" aria-label="Volver al inicio">
         <i class="fa-solid fa-chevron-up"></i>
       </a>
-    </section>
 
-    <section id="testimonios">
-      <article class="hero-image" id="gracias" style="--hero-image: url('img/image-hero-3.png');">
-        <aside class="hero-image-opacity">
-          <div class="hero-image-content">
-            <div class="container">
-              <article class="carousel">
-                <input type="radio" name="slides" id="slide-1" checked>
-                <input type="radio" name="slides" id="slide-2">
-                <ul class="slides">
-                  <li class="slide">
-                    <img class="avatar" src="img/circular2.png" alt="foto 1">
-                    <blockquote>"
-                      Los momentos felices de la vida, se tornan geniales si tenemos la suerte de compartirlo con la
-                      familia y amigos más queridos, por eso te espero para que festejemos juntos.
-                      "</blockquote>
-                    <h4>Te espero</h4>
-                  </li>
-                  <li class="slide">
-                    <img class="avatar" src="img/circular.png" alt="foto 2">
-                    <blockquote>""A cada uno de ustedes, gracias por compartir este momento conmigo, su presencia hará
-                      de ese día algo aún más especial."
-                    </blockquote>
-                    <h2 class="text-first-color">Sofia</h2>
-                  </li>
-
-                </ul>
-                <aside class="slides-nav">
-                  <label for="slide-1" id="dot-1"></label>
-                  <label for="slide-2" id="dot-2"></label>
-                </aside>
-              </article>
-            </div>
-            <a href="#top" class="back-to-top" aria-label="Volver al inicio">
-              <i class="fa-solid fa-chevron-up"></i>
-            </a>
-          </div>
-
-        </aside>
-      </article>
     </section>
 
 
