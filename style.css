@@ -955,6 +955,7 @@ button {
   box-sizing: border-box;
 }
 
+
 .rsvp-btn:hover,
 .location-btn:hover {
   background: var(--third-color);
@@ -1005,6 +1006,7 @@ button {
   color: var(--second-color);
   font-size: 1.2rem;
   margin-bottom: 10px;
+
 }
 
 .estilos-grid {

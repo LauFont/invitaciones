@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d7a194a66b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
 
   <title>Mis Quince | Sofia</title>
   <link rel="stylesheet" href="style.css">
@@ -273,13 +273,13 @@
           <span class="cerrar" onclick="cerrarModal('modalConfirmar')">&times;</span>
           <img src="icons/calendar.svg" alt="icono calendario" class="icono-modal-cancion">
           <h2 class="section-title">Confirmar asistencia</h2>
-          <form class="modal-form-rsvp"
-            action="https://script.google.com/macros/s/AKfycbxhhaxp261Y4J7mbDPVO0l7IRLykEHWoyYW-2LCViYYLPskK24r8uW8tnpc3Tqdx2qDcQ/exec"
-            method="POST" target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalConfirmar');">
-            <!-- 💬 Nombre -->
-            <input type="text" name="NOMBRE Y APELLIDO" placeholder="Nombre y Apellido" class="input-cancion" required>
 
-            <!-- 🎉 Confirmación de asistencia -->
+          <form class="modal-form-rsvp" action="https://script.google.com/macros/s/AKfycbwb8cg2JZR7gKbZiVJ5ivS96Lq9HBstcL8N9HFnW1YgveCbcy3LfbuSNMC2cexbLnS4wg/exec" method="POST"
+            target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalConfirmar');">
+
+            <input type="text" name="NOMBRE Y APELLIDO" placeholder="Nombre y Apellido" class="input-cancion" required>
+            <input type="tel" name="TELÉFONO" placeholder="Tu teléfono" class="input-cancion" required>
+
             <div class="modal-rsvp-group">
               <p>¿Asistirás?</p>
               <label><input type="radio" name="CONFIRMACIÓN" value="Sí, ahí estaré 🥳" required> Sí, ahí estaré
@@ -287,27 +287,25 @@
               <label><input type="radio" name="CONFIRMACIÓN" value="No podré asistir 😭"> No podré asistir 😭</label>
             </div>
 
-            <!-- 🍽️ Restricción alimentaria -->
             <div class="modal-rsvp-group">
               <p>¿Alguna restricción alimentaria?</p>
-              <label><input type="radio" name="RESTRICCIÓN" value="No" required> No</label>
-              <label><input type="radio" name="RESTRICCIÓN" value="Sí, soy celíaco"> Sí, soy celíaco</label>
-              <label><input type="radio" name="RESTRICCIÓN" value="Sí, soy vegano"> Sí, soy vegano</label>
-              <label><input type="radio" name="RESTRICCIÓN" value="Sí, soy vegetariano"> Sí, soy vegetariano</label>
+              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="No" required> No</label>
+              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="Sí, soy celíaco"> Sí, soy celíaco</label>
+              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="Sí, soy vegano"> Sí, soy vegano</label>
+              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="Sí, soy vegetariano"> Sí, soy
+                vegetariano</label>
             </div>
 
-            <!-- 🚌 Necesitás traslado -->
             <div class="modal-rsvp-group">
               <p>¿Necesitás traslado?</p>
               <label><input type="radio" name="TRASLADO" value="Sí" required> Sí, reservame un asiento.</label>
               <label><input type="radio" name="TRASLADO" value="No, iré por mi cuenta"> No, iré por mi cuenta</label>
             </div>
+
             <button type="submit" class="modal-btn-gris">ENVIAR</button>
           </form>
         </div>
       </div>
-
-      <!-- Iframe oculto -->
       <iframe name="hidden_iframe" style="display:none;"></iframe>
 
       <!-- Modal Estilo -->
@@ -335,23 +333,21 @@
           <h2 class="section-title cancion-titulo">Sugerir canciones</h2>
           <hr class="rsvp-line">
 
-          <form id="cancionForm"
-            action="https://script.google.com/macros/s/AKfycbwWPqIKsz7w2cTyywAKXs8cuqbz0BLsh1New1SR1UVnhADVAnwwGgIYJMka6-_Gm--vAQ/exec"
-            method="POST" target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalCancion');">          
+          <form id="cancionForm" action="https://script.google.com/macros/s/AKfycbwb8cg2JZR7gKbZiVJ5ivS96Lq9HBstcL8N9HFnW1YgveCbcy3LfbuSNMC2cexbLnS4wg/exec" method="POST"
+            target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalCancion');">
+
             <p class="cancion-texto">¡Ayudame a crear la mejor playlist para mi fiesta!</p>
             <input type="text" name="CANCIÓN SUGERIDA" placeholder="Nombre de la canción" required
               class="input-artista">
             <input type="text" name="ARTISTA" placeholder="Nombre del artista" required class="input-artista">
-
             <button type="submit" class="modal-btn-gris">ENVIAR</button>
           </form>
         </div>
       </div>
-
-      <!-- Iframe oculto -->
       <iframe name="hidden_iframe" style="display:none;"></iframe>
 
-      <!-- Modal Regalos (corregido) -->
+
+      <!-- Modal Regalos -->
       <div id="modalRegalos" class="modal">
         <div class="modal-contenido">
           <span class="cerrar" onclick="cerrarModal('modalRegalos')">&times;</span>
@@ -360,14 +356,13 @@
           <h3>Billetera digital</h3>
           <p>Enviá el dinero desde el siguiente link:</p>
           <a href="https://www.mercadopago.com.ar/" class="modal-btn-gris" target="_blank">ENVIAR DINERO</a>
-          <br>
+          <br><br>
           <hr>
           <h3>Datos Bancarios</h3>
           <p><strong>CBU/ALIAS:</strong> juan.cumple.mp</p>
           <p><strong>N° de Cuenta:</strong> 1234-5678-9012</p>
           <p><strong>Titular:</strong> Juan Fulano</p>
           <p><strong>Banco:</strong> Banco del Amor</p>
-          <button class="location-btn" onclick="cerrarModal('modalRegalos')">CERRAR</button>
         </div>
       </div>
 
