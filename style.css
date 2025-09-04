@@ -1336,8 +1336,7 @@ button {
     transform: translate(-50%, -10%);
     /* Centrada y sobresaliendo hacia abajo */
     pointer-events: none;
-    z-index: 6;
-    /* encima del video */
+    z-index: 6;    /* encima del video */
     width: 100%;
     max-width: 270px;
     padding: 0 1rem;
@@ -1429,16 +1428,17 @@ button {
     font-size: 1rem;
   }
 
+    
   .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;          /* dejas que el video defina la altura */
+    min-height: 60vh;      /* un mínimo para que no quede muy chico */
+    overflow: visible;
   }
 
   .banner-content {
-    position: absolute;
-    /* fijamos dentro del banner */
+    position: absolute;    /* fijamos dentro del banner */
     bottom: 0rem;
     top: 10%;
     /* ajusta según gusto */
@@ -1458,15 +1458,15 @@ button {
     bottom: 0rem;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     margin-top: 0%;
     inset: 0;
     object-fit: cover;
-    object-position: center;
+    object-position: top center; 
     display: block;
     z-index: 1;
   }
-
+  
   .banner-overlay {
     bottom: 0rem;
     position: relative;
