@@ -250,13 +250,17 @@ button {
 
 
 .typewrite {
-  font-family: var(--font-title);
+  position: relative;
+  font-family: 'Dantina', cursive, sans-serif;
+  text-transform: capitalize;
   letter-spacing: 2px;
-  font-size: 2rem;
-  color: var(--alternative-color);
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--white-color);
   text-align: center;
-  margin: 3rem auto;
-  max-width: 600px;
+  margin: 6rem auto;
+  max-width: 800px;
+  z-index: 1000;
 }
 
 /* ********** musica ********** */
@@ -289,16 +293,17 @@ button {
 /* ********** Countdown ********** */
 
 .countdown-container {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: visible;
-  background: none;
-  bottom: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0;
+  padding: 2rem 0 4rem 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: none;
+  bottom: 0rem;
 }
 
 .countdown-hero {
@@ -323,7 +328,7 @@ button {
 .countdown-flowers {
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 70%;
   /* O ajusta según lo que necesites */
   height: auto;
   transform: translate(-50%, -10%);
@@ -413,12 +418,11 @@ button {
   font-size: 1.4em;
   font-weight: bold;
   color: var(--second-color);
-  /* Rojo del root */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
   margin-bottom: 0.3em;
   text-shadow: none;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 
 
@@ -435,7 +439,6 @@ button {
   position: relative;
   width: 100%;
   height: 89vh;
-  overflow: hidden;
 
 }
 
@@ -450,20 +453,30 @@ button {
   z-index: 1;
 }
 
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 43, 43, 0.45);
+  /* Ajusta la opacidad aquí */
+  z-index: 2;
+  pointer-events: none;
+
+}
+
 .banner-content {
   position: relative;
   z-index: 3;
   height: 100%;
   color: var(--white-color);
-  /* background: rgba(43, 43, 43, 0.3);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* mantiene el contenido arriba */
+  justify-content: flex-start;
+  /* mantiene el contenido arriba */
   align-items: flex-start;
-  padding: 2vw 0 0 4vw;
-  /* top y left, sin padding-bottom */
+  padding: 4rem;
 }
-
 
 
 .banner-content>h3,
@@ -489,20 +502,6 @@ button {
   margin: 0 0 0.5em 0;
   color: var(--white-color);
 }
-
-
-.banner-overlay {
-  position: relative;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(43, 43, 43, 0.45);
-  /* Ajusta la opacidad aquí */
-  z-index: 2;
-  pointer-events: none;
-  padding: 2rem;
-}
-
 
 
 #fecha-evento {
@@ -1205,6 +1204,7 @@ button {
 /* Responsive para tablets y móviles */
 
 
+
 @media (min-width: 768px) {
   .back-to-top {
     display: flex;
@@ -1223,16 +1223,6 @@ button {
   }
 }
 
-@media (max-width: 600px) {
-  .logo-img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .logo a {
-    font-size: 1rem;
-  }
-}
 
 @media screen and (min-width: 1024px) {
   .menu-btn {
@@ -1264,9 +1254,7 @@ button {
     padding: 0.5rem;
     height: calc(var(--header-height) - 0.5rem);
   }
-}
 
-@media screen and (min-width: 1024px) {
   .menu-btn {
     display: none;
   }
@@ -1280,6 +1268,7 @@ button {
     background-color: var(--first-color);
     box-shadow: none;
   }
+
 
   .menu a {
     padding: 0 0.5rem;
@@ -1296,9 +1285,15 @@ button {
     padding: 0.5rem;
     height: calc(var(--header-height) - 0.5rem);
   }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 89vh;
+    overflow: hidden;
+  }
+
 }
-
-
 
 @media (max-width: 899px) {
 
@@ -1320,7 +1315,7 @@ button {
   .countdown-flowers {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 75%;
     /* O ajusta según lo que necesites */
     height: auto;
     transform: translate(-50%, -10%);
@@ -1333,37 +1328,152 @@ button {
     max-width: 400px;
     padding: 0 1rem;
     box-sizing: border-box;
+    overflow: visible;
   }
 
   .countdown-hero {
+    bottom: 0rem;
     padding: 1em 1em;
     min-width: 200px;
     max-width: 98vw;
     font-size: 0.95em;
   }
 
-
-  .countdown-flowers {
-    overflow: visible;
-  }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 600px) {
+  .logo-img {
+    width: 36px;
+    height: 36px;
+  }
 
+  .logo a {
+    font-size: 1rem;
+  }
+
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .banner-video {
+    bottom: 0rem;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 0%;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    z-index: 1;
+  }
+
+  .banner-overlay {
+    bottom: 0rem;
+    position: relative;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.45);
+    z-index: 2;
+    pointer-events: none;
+    padding: 1rem;
+    /* menos padding para no achicar el video */
+  }
+
+  .banner-content {
+    bottom: 0rem;
+    position: relative;
+    z-index: 6;
+    height: 100%;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5vw 0 0 5vw;
+    /* más cómodo en pantallas chicas */
+  }
+
+  .banner-content>h1 {
+    font-size: 2rem;
+    /* se reduce para móvil */
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+  }
+
+  .banner-content>h3 {
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+    color: var(--white-color);
+  }
 
   #countdown {
     font-size: 1em;
     gap: 1em;
   }
 
-  .countdown-flowers {
-    overflow: visible;
-  }
 
   .countdown-number {
     width: 42px;
     height: 42px;
     font-size: 1em;
+  }
+
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    margin-top: 0;
+    width: 100%;
+    overflow: visible;
+    background: none;
+    bottom: 0rem;
+
+  }
+
+  .countdown-flowers {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    height: auto;
+    transform: translate(-50%, -10%);
+    pointer-events: none;
+    z-index: 6;
+    overflow: visible;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .countdown-hero {
+    top: 10%;
+    padding: 1em 1em;
+    min-width: 180px;
+    max-width: 98vw;
+    font-size: 0.85em;
+  }
+
+  .countdown-circle-outline {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    border: 1.5px solid var(--white-alpha-color);
+    /* Borde blanco y fino */
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 2;
+    /* Debajo del countdown, encima del video */
   }
 }
 
@@ -1384,7 +1494,7 @@ button {
   .section-title.mi-historia-titulo {
     font-size: 1rem;
   }
- 
+
   .mi-historia-textos {
     margin: 4rem 2rem 2rem 2rem;
     text-align: center;
@@ -1423,7 +1533,7 @@ button {
 /* Toque en móviles */
 @media (hover: none) and (pointer: coarse) {
   .estilos-grid img:active {
-    transform: scale(1.05);
+    transform: scale(1.5);
   }
 }
 
@@ -1471,7 +1581,7 @@ button {
   }
 }
 
-/* Responsivo para tablets y móviles */
+
 @media (max-width: 768px) {
   .estilos-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1489,37 +1599,15 @@ button {
   }
 }
 
-/** footer **/
-@media screen and (min-width: 1024px) {
-  .footer {
-    margin-bottom: 0;
-  }
-}
 
-@media (max-width: 500px) {
 
-  html,
-  body,
-  .banner,
-  .galeria,
-  .section,
-  .container1,
-  .header>.container1 {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-  }
+@media (max-width: 599px) {
+
 
   .galeria {
     padding: 0 !important;
   }
 }
-
-
-
 
 
 /* Rsvp */
@@ -1610,5 +1698,12 @@ button {
   .close {
     top: 20px;
     right: 20px;
+  }
+}
+
+/** footer **/
+@media screen and (min-width: 1024px) {
+  .footer {
+    margin-bottom: 0;
   }
 }
