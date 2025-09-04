@@ -6,17 +6,16 @@
   --second-alpha-color: rgba(153, 15, 26, 0.7);
   --third-color: #C1272D;
   --third-alpha-color: rgba(193, 39, 45, 0.7);
-  --accent-gold: #dbac12;
   --accent-gold-alpha: rgba(212, 175, 55, 0.556);
   --white-color: #FFFFFF;
   --gray-light-color: #dcdbdb;
-  --gray-color: #edede6;
+  --gray-color: #868686;
   --gray-dark-color: #2B2B2B;
   --black-color: #2B2B2B;
   --link-color: #C1272D;
   --title-color: #990F1A;
   --text-color: #2B2B2B;
-  --alternative-color: #b48a78;
+  --alternative-color: #dab7b7;
   --white-alpha-color: rgba(251, 247, 247, 0.812);
   --black-alpha-color: rgba(43, 43, 43, 0.90);
   --font-title: 'Dancing Script', cursive;
@@ -70,8 +69,9 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
-  background: var(--gray-light-color);
+  background: var(--alternative-color);
   font-family: var(--font-text);
 }
 
@@ -120,7 +120,7 @@ button {
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: background 0.2s;
+  transition: 0.2s;
 }
 
 .back-to-top:hover {
@@ -163,7 +163,7 @@ button {
 }
 
 .logo a:hover {
-  color: var(--accent-gold);
+  color: var(--alternative-color);
 }
 
 .menu {
@@ -178,7 +178,7 @@ button {
   pointer-events: none;
   transition: opacity 0.5s ease;
   z-index: 1001;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
   max-width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -212,11 +212,11 @@ button {
 
 .menu.is-active {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: auto;  
 }
 
 .menu a {
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
@@ -292,7 +292,7 @@ button {
   }
 
   .menu a {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     font-size: 1rem;
   }
 
@@ -309,12 +309,11 @@ button {
 }
 
 .typewrite {
-  font-family: 'Comfortaa', cursive, sans-serif;
-  text-transform: uppercase;
+  font-family: var(--font-title);
   letter-spacing: 2px;
   font-weight: 700;
-  font-size: 3rem;
-  color: var(--accent-gold);
+  font-size: 5rem;
+  color: var(--alternative-color);
   text-align: center;
   margin: 4rem auto;
   max-width: 800px;
@@ -359,18 +358,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 
 .countdown-hero {
   position: absolute;
   left: 50%;
-  top: 60%;
-  /* O ajusta según lo que necesites */
+  top: 50%;   /* O ajusta según lo que necesites */
   bottom: 0rem;
   transform: translateX(-50%);
   z-index: 6;
-  padding: 4.5em 4.5em;
-  /* Aumenta el padding para que el círculo no tape el texto */
+  padding: 4.5em 4.5em;   /* Aumenta el padding para que el círculo no tape el texto */
   text-align: center;
   min-width: 260px;
   max-width: 95vw;
@@ -383,17 +381,14 @@ button {
 .countdown-flowers {
   position: absolute;
   left: 50%;
-  top: 90%;
-  /* O ajusta según lo que necesites */
+  top: 80%;   /* O ajusta según lo que necesites */
   height: auto;
-  transform: translate(-50%, -10%);
-  /* Centrada y sobresaliendo hacia abajo */
+  transform: translate(-50%, -10%);   /* Centrada y sobresaliendo hacia abajo */
   pointer-events: none;
-  z-index: 5;
-  /* Debajo del countdown, encima del video */
+  z-index: 5;   /* Debajo del countdown, encima del video */
   overflow: visible;
   width: 100vw;
-  max-width: 520px;
+  max-width: 550px;
   padding: 0 1rem;
   box-sizing: border-box;
 }
@@ -401,32 +396,29 @@ button {
 
 .countdown-circle-outline {
   position: absolute;
-  left: 50%;
-  /* El top se ajusta para que queden bajo las flores */
-  top: 60%;
-  border: 1.5px solid var(--white-alpha-color);
-  /* Borde blanco y fino */
+  left: 50%;  /* El top se ajusta para que queden bajo las flores */
+  top: 50%;
+  border: 1.5px solid var(--white-alpha-color);   /* Borde blanco y fino */
   border-radius: 50%;
   background: transparent;
   pointer-events: none;
-  z-index: 2;
-  /* Debajo del countdown, encima del video */
+  z-index: 2;  /* Debajo del countdown, encima del video */
 
 }
 
 /* Primer círculo: mismo ancho que las flores */
 
 .circle1 {
-  width: 85vw;
-  max-width: 440px;
+  width: 75vw;
+  max-width: 420px;
   aspect-ratio: 1 / 1;
   transform: translate(-30%, -1%);
   animation: oscilar 4s ease-in-out infinite;
 }
 
 .circle2 {
-  width: 90vw;
-  max-width: 460px;
+  width: 80vw;
+  max-width: 450px;
   aspect-ratio: 1 / 1;
   transform: translate(-55%, 5%);
   opacity: 0.8;
@@ -446,10 +438,10 @@ button {
 
 #countdown {
   font-family: 'Comfortaa', cursive, sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 0.1em;
   display: flex;
-  gap: 1.5em;
+  gap: 1.2em;
   justify-content: center;
   align-items: flex-end;
 }
@@ -495,8 +487,8 @@ button {
 @media (max-width: 899px) {
   .countdown-hero {
     padding: 1em 1em;
-    min-width: 200px;
-    max-width: 98vw;
+    min-width: 1800px;
+    max-width: 90vw;
     font-size: 0.95em;
   }
 
@@ -511,7 +503,7 @@ button {
 
   #countdown {
     font-size: 1em;
-    gap: 1em;
+    gap: 2em;
   }
 
   .countdown-flowers {
@@ -567,18 +559,19 @@ button {
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 89vh;
+  overflow: hidden;
 
 }
 
 
 .banner-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   z-index: 1;
 }
 
@@ -587,38 +580,31 @@ button {
   z-index: 3;
   height: 100%;
   color: var(--white-color);
-  background: rgba(43, 43, 43, 0.3);
+  /* background: rgba(43, 43, 43, 0.3);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; /* mantiene el contenido arriba */
   align-items: flex-start;
-  padding-bottom: 0;
-  /* Aumenta este valor para subir el texto */
-  padding-left: 4vw;
-  padding-top: 6vw;
-  overflow: visible;
+  padding: 2vw 0 0 4vw; /* top y left, sin padding-bottom */
 }
 
 
 
 .banner-content>h3,
 .banner-content>h1 {
-  margin: 0 0 0.5em 0;
-  /* solo margen inferior para separar, no lateral */
+  margin: 0 0 0.5em 0;   /* solo margen inferior para separar, no lateral */
   font-family: 'Comfortaa', cursive, sans-serif;
   font-weight: 300;
 }
 
 .banner-content>h1 {
-  font-size: 3rem;
-  /* o el tamaño que prefieras */
+  font-size: 3rem;  /* o el tamaño que prefieras */
   font-family: 'Comfortaa', cursive, sans-serif;
   font-weight: 700;
 }
 
 .banner-content>h3 {
-  font-size: 2rem;
-  /* Prueba 2rem o más si lo quieres aún más grande */
+  font-size: 2rem;   /* Prueba 2rem o más si lo quieres aún más grande */
   font-family: 'Comfortaa', cursive, sans-serif;
   font-weight: 700;
   margin: 0 0 0.5em 0;
@@ -627,15 +613,14 @@ button {
 
 
 .banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  inset: 0;
   width: 100%;
   height: 100%;
-  background: rgba(43, 43, 43, 0.45);
-  /* Ajusta la opacidad aquí */
+  background: rgba(43, 43, 43, 0.45);  /* Ajusta la opacidad aquí */
   z-index: 2;
   pointer-events: none;
+  padding: 2rem;
 }
 
 
@@ -654,12 +639,28 @@ button {
 /* ********** Galería y Mi Historia ********** */
 
 
+.section-parrafo-mi-historia{
+  font-family: 'Comfortaa', cursive, sans-serif;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem auto 1.5rem auto;
+  width: auto;
+  max-width: 90%;
+  background: none;
+  border: none;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  white-space: normal;
+  display: block;
+}
+
 .section-title-mi-historia-titulo {
   font-family: 'Dantina', cursive, sans-serif;
   color: var(--second-color);
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin: 15rem auto 1.5rem auto;
+  margin: 1rem auto 2rem auto;
   width: auto;
   max-width: 90%;
   background: none;
@@ -697,7 +698,7 @@ button {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
   max-width: 100%;
   margin: 1rem auto;
@@ -769,6 +770,8 @@ button {
 .light-box img {
   max-width: 80%;
   max-height: 90%;
+  position: relative;
+  z-index: 1001; 
 }
 
 .light-box:target {
@@ -788,6 +791,7 @@ button {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
+  z-index: 1002;
 }
 
 .next {
@@ -799,6 +803,7 @@ button {
   text-decoration: none;
   text-align: center;
   background: var(--gray-dark-color);
+  z-index: 1002;
 }
 
 
@@ -806,6 +811,11 @@ button {
 /* ***** RSVP y Locación  **** */
 
 /* Contenedor flex: lado a lado en escritorio, apilado en móvil */
+.rsvp-location-bg{
+  background: var(--first-alpha-color);  
+  margin: 0;
+}
+
 .rsvp-location-flex {
   display: flex;
   flex-direction: row;
@@ -1081,7 +1091,7 @@ button {
 
 .input-cancion::placeholder,
 .input-artista::placeholder {
-  color: #999;
+  color: var(--gray-color);
   font-style: italic;
 }
 
@@ -1152,7 +1162,7 @@ button {
 
 .input-cancion::placeholder,
 .input-artista::placeholder {
-  color: var(--gray-light-color);
+  color: var(--gray-color);
   font-style: italic;
   opacity: 1;
 }
@@ -1197,8 +1207,14 @@ button {
 
 .rsvp-bg-separator {
   /* Cambia este color por el que prefieras */
-  background: var(--accent-gold-alpha) url('img/fondo-flores-doradas.png') center center no-repeat;
+  background: var(--alternative-color) url('img/fondo-flores-doradas.png') center center no-repeat;
   background-size: contain;
+   /* el color que quieras */
+}
+
+.rsvp-location-bg {
+  background: none; /* eliminamos cualquier fondo individual */
+
   /* o cover, según prefieras */
   margin: 0;
   padding: 1rem 0 1rem 0;
@@ -1206,122 +1222,7 @@ button {
 
 /* ===== Carrusel de Testimonios ===== */
 
-/* Centra verticalmente el contenido de .container */
-#testimonios .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 60vh;
-  /* Ajusta según el alto que desees para el área de testimonios */
-}
 
-#testimonios .section-title {
-  font-size: 3em;
-  line-height: 1.1;
-  color: var(--accent-gold-alpha);
-  /* Color de los títulos */
-  max-width: 500px;
-  /* Limita el ancho para menos saltos de línea */
-  margin-left: auto;
-  margin-right: auto;
-  white-space: normal;
-  text-align: center;
-}
-
-#testimonios .slide h2 {
-  font-size: 2em;
-  color: var(--second-color);
-  /* O el color que prefieras */
-  margin-top: 1em;
-  margin-bottom: 0;
-  font-family: 'Dantina', cursive, sans-serif;
-}
-
-#testimonios .slide h4 {
-  font-size: 1.3em;
-  color: var(--gray-dark-color);
-  /* O el color que prefieras */
-  margin-bottom: 0.5em;
-  font-family: 'Comfortaa', cursive, sans-serif;
-}
-
-#testimonios blockquote {
-  margin-left: 2.5em;
-  margin-right: 2.5em;
-  font-size: 1.15em;
-  font-style: italic;
-  color: var(--gray-dark-color);
-  text-align: center;
-  line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  #testimonios blockquote {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-}
-
-.carousel {
-  --carousel-bg-color: var(--white-alpha-color);
-  background: var(--carousel-bg-color);
-  margin: 2rem auto;
-  margin-top: 2.5rem;
-  /* Ajusta el valor según el espacio que desees */
-  max-width: 600px;
-  border-radius: 1.5em;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  padding: 2em 2em;
-  position: center;
-}
-
-.carousel input[type="radio"] {
-  display: none;
-}
-
-.carousel .slides {
-  list-style: none;
-  padding: 0;
-  margin: 2rem;
-}
-
-.carousel .slide {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  animation: fadeIn 0.7s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-.avatar {
-  width: 300px;
-  /* Puedes ajustar este valor, por ejemplo 120px o 140px */
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1em;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
-}
-
-.bg-gray-light {
-  background-color: var(--gray-light-color);
-}
-
-.box-shadow-1 {
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
-}
 
 .btn {
   border-radius: 0.5rem;
@@ -1359,6 +1260,22 @@ button {
   width: 350px;
   text-align: center;
   color: var(--first-color);
+}
+
+#dress-code {
+  text-align: center;
+  font-family: 'Comfortaa', cursive, sans-serif;
+  color: var(--link-color);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0.3rem; 
+  width: auto;
+  background: none;
+  border: none;
+  letter-spacing: 1px;
+  white-space: normal;
+  display: inline;
+  line-height: 1.5;
 }
 
 .text-first-color {
@@ -1449,6 +1366,14 @@ button {
   background: var(--title-color);
 }
 
+
+.section-mi-historia{
+  background: var(--first-color) ;
+  background-size: contain;
+  /* o cover, según prefieras */
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+}
 
 /* ********** Footer ********** */
 .footer {
