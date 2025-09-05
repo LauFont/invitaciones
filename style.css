@@ -309,11 +309,13 @@ button {
 .countdown-hero {
   position: absolute;
   left: 50%;
-  top: 50%;  /* O ajusta según lo que necesites */
+  top: 50%;
+  /* O ajusta según lo que necesites */
   bottom: 0rem;
   transform: translateX(-50%);
   z-index: 6;
-  padding: 4.5em 4.5em;  /* Aumenta el padding para que el círculo no tape el texto */
+  padding: 4em 4em;
+  /* Aumenta el padding para que el círculo no tape el texto */
   text-align: center;
   min-width: 260px;
   max-width: 95vw;
@@ -326,11 +328,14 @@ button {
 .countdown-flowers {
   position: absolute;
   left: 50%;
-  top: 75%;  /* O ajusta según lo que necesites */
+  top: 75%;
+  /* O ajusta según lo que necesites */
   height: auto;
-  transform: translate(-50%, -10%);  /* Centrada y sobresaliendo hacia abajo */
+  transform: translate(-50%, -10%);
+  /* Centrada y sobresaliendo hacia abajo */
   pointer-events: none;
-  z-index: 5;  /* Debajo del countdown, encima del video */
+  z-index: 5;
+  /* Debajo del countdown, encima del video */
   overflow: visible;
   width: 100vw;
   max-width: 550px;
@@ -341,13 +346,16 @@ button {
 
 .countdown-circle-outline {
   position: absolute;
-  left: 50%;  /* El top se ajusta para que queden bajo las flores */
+  left: 50%;
+  /* El top se ajusta para que queden bajo las flores */
   top: 50%;
-  border: 1.5px solid var(--white-alpha-color);  /* Borde blanco y fino */
+  border: 1.5px solid var(--white-alpha-color);
+  /* Borde blanco y fino */
   border-radius: 50%;
   background: transparent;
   pointer-events: none;
-  z-index: 2;  /* Debajo del countdown, encima del video */
+  z-index: 2;
+  /* Debajo del countdown, encima del video */
 
 }
 
@@ -467,7 +475,7 @@ button {
   justify-content: flex-start;
   /* mantiene el contenido arriba */
   align-items: flex-start;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 
@@ -1071,7 +1079,8 @@ button {
 
 .hero-image {
   position: relative;
-  min-height: 400px;  /* o el alto que necesites */
+  min-height: 400px;
+  /* o el alto que necesites */
   background: var(--hero-image, none) center center/cover no-repeat;
   background-image: var(--hero-image);
   background-size: cover;
@@ -1079,7 +1088,8 @@ button {
 }
 
 .hero-image-content {
-  padding-bottom: 2rem;  /* Ajusta el valor según lo que necesites */
+  padding-bottom: 2rem;
+  /* Ajusta el valor según lo que necesites */
 }
 
 /* Mostrar solo la slide activa según el radio seleccionado */
@@ -1282,7 +1292,7 @@ button {
     overflow: hidden;
   }
 
-   .countdown-flowers {
+  .countdown-flowers {
     position: absolute;
     left: 50%;
     top: 70%;
@@ -1319,9 +1329,11 @@ button {
 
   .typewrite {
     display: inline-block;
-    font-size: 2rem;    /* más grande en móvil */
+    font-size: 2rem;
+    /* más grande en móvil */
     color: var(--white-color);
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);    /* para contraste */
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    /* para contraste */
     margin: 0.6rem auto;
     white-space: nowrap;
   }
@@ -1336,7 +1348,8 @@ button {
     transform: translate(-50%, -10%);
     /* Centrada y sobresaliendo hacia abajo */
     pointer-events: none;
-    z-index: 6;    /* encima del video */
+    z-index: 6;
+    /* encima del video */
     width: 100%;
     max-width: 270px;
     padding: 0 1rem;
@@ -1428,20 +1441,18 @@ button {
     font-size: 1rem;
   }
 
-    
   .banner {
     position: relative;
     width: 100%;
-    height: auto;          /* dejas que el video defina la altura */
-    min-height: 60vh;      /* un mínimo para que no quede muy chico */
+    height: auto;    /* dejas que el video defina la altura */
+    min-height: 60vh;    /* un mínimo para que no quede muy chico */
     overflow: visible;
   }
 
   .banner-content {
     position: absolute;    /* fijamos dentro del banner */
     bottom: 0rem;
-    top: 10%;
-    /* ajusta según gusto */
+    top: 10%;    /* ajusta según gusto */
     left: 50%;
     transform: translateX(-50%);
     z-index: 6;
@@ -1462,11 +1473,11 @@ button {
     margin-top: 0%;
     inset: 0;
     object-fit: cover;
-    object-position: top center; 
+    object-position: top center;
     display: block;
     z-index: 1;
   }
-  
+
   .banner-overlay {
     bottom: 0rem;
     position: relative;
@@ -1476,24 +1487,22 @@ button {
     background: rgba(43, 43, 43, 0.45);
     z-index: 2;
     pointer-events: none;
-    padding: 0.5rem;
-    /* menos padding para no achicar el video */
+    padding: 0.5rem;    /* menos padding para no achicar el video */
   }
-
 
 
   .banner-content>h1 {
     font-size: 1rem;    /* se reduce para móvil */
     font-family: 'Comfortaa', cursive, sans-serif;
-    font-weight: 400;
-    margin: 0 0 0.5em 0;
+    font-weight: 200;
+    margin: 0;
   }
 
   .banner-content>h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: Dantina, cursive, sans-serif;
     font-weight: 300;
-    margin: 0 0 0.5em 0;
+    margin: 0 ;
     color: var(--white-color);
   }
 
@@ -1501,20 +1510,16 @@ button {
     font-size: 1.5rem;
     font-family: 'Comfortaa', cursive, sans-serif;
     font-weight: 400;
-    margin: 0 0 0.5em 0;
+    margin: 0;
     color: var(--white-color);
   }
 
-
-
   .typewrite {
     display: inline-block;
-    font-size: 1rem;
-    /* más grande en móvil */
+    font-size: 1.4rem;    /* más grande en móvil */
     color: var(--white-color);
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
-    /* para contraste */
-    margin: 1rem auto;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);    /* para contraste */
+    margin: 0.5rem auto;
     white-space: nowrap;
   }
 
@@ -1834,13 +1839,14 @@ button {
 }
 
 /* Ajustes SOLO en modo landscape (horizontal) */
-@media (max-width: 667px) and (orientation: landscape) {
+@media (max-width: 600px) and (orientation: landscape) {
   .banner {
-    height: 70vh; /* menos alto para evitar desborde */
+    height: 70vh;
+    /* menos alto para evitar desborde */
   }
 
   .banner-content h1 {
-    font-size: 1rem; /* reduce títulos */
+    font-size: 0.8rem;    /* reduce títulos */
   }
 
   .banner-content h3 {
@@ -1848,16 +1854,147 @@ button {
   }
 
   .typewrite {
-    font-size: 1rem; /* reduce typewrite */
+    font-size: 0.8rem;    /* reduce typewrite */
   }
 
   #fecha-evento {
-    font-size: 0.5rem; /* reduce fecha */
+    font-size: 0.5rem;
+    /* reduce fecha */
   }
 
   .music-btn {
-    top: 4px;   /* corregido (tenías "4p4") */
+    top: 4px;
+    /* corregido (tenías "4p4") */
     right: 5px;
-    transform: scale(0.8); /* botón más chico */
+    transform: scale(0.8);
+    /* botón más chico */
+  }
+
+  /* El contador se corre fuera del banner */
+  .countdown-container {
+    position: relative;
+    margin-top: 1rem;
+    /* espacio debajo del video */
+  }
+
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .banner-content {
+    top: 10%;
+  }
+
+  .countdown-container {
+    position: absolute;
+    bottom: 10%;    /* lo mantienes dentro del video */
+    right: 5%;    /* lo corres al costado derecho */
+    transform: scale(1);    /* lo haces un poco más pequeño */
+    z-index: 3;    /* para que esté por encima del overlay */
+  }
+
+  .countdown-container h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    top: auto;
+  }
+
+  #countdown {
+    font-size: 1rem;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;    /* reduce títulos */
+
+  }
+
+  .banner-content h3 {
+    font-size: 1rem;
+  }
+
+  .typewrite {
+    font-size: 1rem;
+    /* reduce typewrite */
+  }
+
+  #fecha-evento {
+    font-size: 1rem;
+    /* reduce fecha */
+  }
+
+  .music-btn {
+    top: 4px;    /* corregido (tenías "4p4") */
+    right: 5px;
+    transform: scale(0.8);    /* botón más chico */
+  }
+
+  .countdown-flowers {
+    position: absolute;
+    left: 60%;
+    top: 45%;
+    height: auto;
+    transform: translate(-50%, -10%);
+    pointer-events: none;
+    z-index: 6;
+    overflow: visible;
+    width: 100%;
+    max-width: 300px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  #countdown {
+    font-size: 0.5em;
+    gap: 0.5em;
+
+  }
+
+  .countdown-hero {
+    position: absolute;
+    left: 60%;
+    top: 12%;
+    padding: 2em 2em;
+    min-width: 180px;
+    max-width: 98vw;
+    font-size: 1.5em;
+  }
+
+  .countdown-number {
+    top: 20%;
+    font-size: 1em;
+    width: 45px;
+    height: 45px;
+    z-index: 4;
+  }
+
+  .countdown-circle-outline {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    border: 1.5px solid var(--white-alpha-color);
+    /* Borde blanco y fino */
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 2;
+    /* Debajo del countdown, encima del video */
+  }
+
+  /* Primer círculo: mismo ancho que las flores */
+
+  .circle1 {
+    width: 60vw;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+    transform: translate(-40%, -1%);
+    animation: oscilar 4s ease-in-out infinite;
+  }
+
+  .circle2 {
+    width: 50vw;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    transform: translate(-65%, 5%);
+    opacity: 0.8;
+    animation: oscilar 6s ease-in-out infinite;
   }
 }
