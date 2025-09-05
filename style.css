@@ -1444,15 +1444,19 @@ button {
   .banner {
     position: relative;
     width: 100%;
-    height: auto;    /* dejas que el video defina la altura */
-    min-height: 60vh;    /* un mínimo para que no quede muy chico */
+    height: auto;
+    /* dejas que el video defina la altura */
+    min-height: 60vh;
+    /* un mínimo para que no quede muy chico */
     overflow: visible;
   }
 
   .banner-content {
-    position: absolute;    /* fijamos dentro del banner */
+    position: absolute;
+    /* fijamos dentro del banner */
     bottom: 0rem;
-    top: 10%;    /* ajusta según gusto */
+    top: 10%;
+    /* ajusta según gusto */
     left: 50%;
     transform: translateX(-50%);
     z-index: 6;
@@ -1487,12 +1491,14 @@ button {
     background: rgba(43, 43, 43, 0.45);
     z-index: 2;
     pointer-events: none;
-    padding: 0.5rem;    /* menos padding para no achicar el video */
+    padding: 0.5rem;
+    /* menos padding para no achicar el video */
   }
 
 
   .banner-content>h1 {
-    font-size: 1rem;    /* se reduce para móvil */
+    font-size: 1rem;
+    /* se reduce para móvil */
     font-family: 'Comfortaa', cursive, sans-serif;
     font-weight: 200;
     margin: 0;
@@ -1502,7 +1508,7 @@ button {
     font-size: 1rem;
     font-family: Dantina, cursive, sans-serif;
     font-weight: 300;
-    margin: 0 ;
+    margin: 0;
     color: var(--white-color);
   }
 
@@ -1516,9 +1522,11 @@ button {
 
   .typewrite {
     display: inline-block;
-    font-size: 1.4rem;    /* más grande en móvil */
+    font-size: 1.4rem;
+    /* más grande en móvil */
     color: var(--white-color);
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);    /* para contraste */
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    /* para contraste */
     margin: 0.5rem auto;
     white-space: nowrap;
   }
@@ -1730,10 +1738,7 @@ button {
 }
 
 
-
 @media (max-width: 599px) {
-
-
   .galeria {
     padding: 0 !important;
   }
@@ -1846,7 +1851,8 @@ button {
   }
 
   .banner-content h1 {
-    font-size: 0.8rem;    /* reduce títulos */
+    font-size: 0.8rem;
+    /* reduce títulos */
   }
 
   .banner-content h3 {
@@ -1854,7 +1860,8 @@ button {
   }
 
   .typewrite {
-    font-size: 0.8rem;    /* reduce typewrite */
+    font-size: 0.8rem;
+    /* reduce typewrite */
   }
 
   #fecha-evento {
@@ -1886,10 +1893,14 @@ button {
 
   .countdown-container {
     position: absolute;
-    bottom: 10%;    /* lo mantienes dentro del video */
-    right: 5%;    /* lo corres al costado derecho */
-    transform: scale(1);    /* lo haces un poco más pequeño */
-    z-index: 3;    /* para que esté por encima del overlay */
+    bottom: 10%;
+    /* lo mantienes dentro del video */
+    right: 5%;
+    /* lo corres al costado derecho */
+    transform: scale(1);
+    /* lo haces un poco más pequeño */
+    z-index: 3;
+    /* para que esté por encima del overlay */
   }
 
   .countdown-container h2 {
@@ -1903,8 +1914,8 @@ button {
   }
 
   .banner-content h1 {
-    font-size: 2rem;    /* reduce títulos */
-
+    font-size: 2rem;
+    /* reduce títulos */
   }
 
   .banner-content h3 {
@@ -1922,15 +1933,16 @@ button {
   }
 
   .music-btn {
-    top: 4px;    /* corregido (tenías "4p4") */
+    top: 4px;
     right: 5px;
-    transform: scale(0.8);    /* botón más chico */
+    transform: scale(0.8);
+    /* botón más chico */
   }
 
   .countdown-flowers {
     position: absolute;
     left: 60%;
-    top: 45%;
+    top: 50%;
     height: auto;
     transform: translate(-50%, -10%);
     pointer-events: none;
@@ -1996,5 +2008,95 @@ button {
     transform: translate(-65%, 5%);
     opacity: 0.8;
     animation: oscilar 6s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  .countdown-container {
+    position: absolute;
+    bottom: 10%;
+    /* sigue dentro del video */
+    right: 5%;
+    /* se mueve al costado derecho */
+    transform: scale(0.85);
+    /* más pequeño */
+    z-index: 3;
+    top: 5%;
+  }
+
+  .countdown-hero {
+    transform: scale(0.85);
+    position: absolute;
+    bottom: 5%;
+    top: 3%;
+    padding: 1em 1em;
+    min-width: 180px;
+    max-width: 98vw;
+    font-size: 1em;
+
+  }
+
+  .countdown-circle-outline {
+    position: absolute;
+    transform: scale(0.85);
+    top: 5%;
+    left: 65%;
+  }
+
+
+  .banner-content {
+    transform: translateY(-20px);
+    /* sube los textos un poco */
+  }
+
+
+
+
+  .banner-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner-content h3,
+  .typewrite {
+    font-size: 1rem;
+  }
+
+  .countdown-number {
+    transform: scale(0.85);
+  }
+
+
+  /* Primer círculo: mismo ancho que las flores */
+
+  .circle1 {
+    width: 60vw;
+    max-width: 280px;
+    aspect-ratio: 1 / 1;
+    transform: translate(-40%, -1%);
+    animation: oscilar 4s ease-in-out infinite;
+  }
+
+  .circle2 {
+    width: 50vw;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    transform: translate(-65%, 5%);
+    opacity: 0.8;
+    animation: oscilar 6s ease-in-out infinite;
+  }
+
+  .countdown-flowers {
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    transform: translate(-50%, -10%);
+    pointer-events: none;
+    z-index: 6;
+    overflow: visible;
+    width: 80%;
+    max-width: 350px;
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+    height: auto;
   }
 }
