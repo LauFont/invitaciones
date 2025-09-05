@@ -1429,8 +1429,6 @@ button {
 }
 
 
-
-
 @media (max-width: 600px) {
   .logo-img {
     width: 36px;
@@ -2002,7 +2000,7 @@ button {
   }
 
   .circle2 {
-    width: 50vw;
+    width: 55vw;
     max-width: 200px;
     aspect-ratio: 1 / 1;
     transform: translate(-65%, 5%);
@@ -2010,74 +2008,9 @@ button {
     animation: oscilar 6s ease-in-out infinite;
   }
 }
-
-@media (max-width: 932px) and (orientation: landscape) {
-  .countdown-container {
-    position: absolute;
-    bottom: 10%;
-    /* sigue dentro del video */
-    right: 5%;
-    /* se mueve al costado derecho */
-    transform: scale(0.85);
-    /* más pequeño */
-    z-index: 3;
-    top: 5%;
-  }
-
-  .countdown-hero {
-    transform: scale(0.85);
-    position: absolute;
-    bottom: 5%;
-    top: 3%;
-    padding: 1em 1em;
-    min-width: 180px;
-    max-width: 98vw;
-    font-size: 1em;
-
-  }
-
-  .countdown-circle-outline {
-    position: absolute;
-    transform: scale(0.85);
-    top: 5%;
-    left: 65%;
-  }
-
-
-  .banner-content {
-    transform: translateY(-20px);
-    /* sube los textos un poco */
-  }
-
-
-
-
-  .banner-content h1 {
-    font-size: 1.6rem;
-  }
-
-  .banner-content h3,
-  .typewrite {
-    font-size: 1rem;
-  }
-
-  .countdown-number {
-    transform: scale(0.85);
-  }
-
-
-  /* Primer círculo: mismo ancho que las flores */
-
-  .circle1 {
-    width: 60vw;
-    max-width: 280px;
-    aspect-ratio: 1 / 1;
-    transform: translate(-40%, -1%);
-    animation: oscilar 4s ease-in-out infinite;
-  }
-
+@media (max-width: 600px) and (orientation: landscape) {
   .circle2 {
-    width: 50vw;
+    width: 60vw;
     max-width: 250px;
     aspect-ratio: 1 / 1;
     transform: translate(-65%, 5%);
@@ -2087,15 +2020,15 @@ button {
 
   .countdown-flowers {
     position: absolute;
-    left: 65%;
-    top: 35%;
+    left: 50%;
+    top: 40%;
     transform: translate(-50%, -10%);
     pointer-events: none;
     z-index: 6;
     overflow: visible;
     width: 80%;
-    max-width: 350px;
-    padding: 0 0.4rem;
+    max-width: 300px;
+    padding: 0 0.2rem;
     box-sizing: border-box;
     height: auto;
   }
