@@ -1832,3 +1832,32 @@ button {
     margin-bottom: 0;
   }
 }
+
+/* Ajustes SOLO en modo landscape (horizontal) */
+@media (max-width: 667px) and (orientation: landscape) {
+  .banner {
+    height: 70vh; /* menos alto para evitar desborde */
+  }
+
+  .banner-content h1 {
+    font-size: 1rem; /* reduce títulos */
+  }
+
+  .banner-content h3 {
+    font-size: 1rem;
+  }
+
+  .typewrite {
+    font-size: 1rem; /* reduce typewrite */
+  }
+
+  #fecha-evento {
+    font-size: 0.5rem; /* reduce fecha */
+  }
+
+  .music-btn {
+    top: 4px;   /* corregido (tenías "4p4") */
+    right: 5px;
+    transform: scale(0.8); /* botón más chico */
+  }
+}
