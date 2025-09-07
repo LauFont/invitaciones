@@ -362,20 +362,20 @@ button {
 /* Primer círculo: mismo ancho que las flores */
 
 .circle1 {
-  width: 750vw;
-  max-width: 380px;
+  width: 60vw;
+  max-width: 340px;
   aspect-ratio: 1 / 1;
-  transform: translate(-30%, -1%);
-  animation: oscilar 4s ease-in-out infinite;
+  transform: translate(-30%, -15%);
+  animation: oscilar 6s ease-in-out infinite;
 }
 
 .circle2 {
-  width: 60vw;
-  max-width: 420px;
+  width: 50vw;
+  max-width: 360px;
   aspect-ratio: 1 / 1;
-  transform: translate(-55%, 5%);
+  transform: translate(-65%, 1%);
   opacity: 0.8;
-  animation: oscilar 6s ease-in-out infinite;
+  animation: oscilar 2s ease-in-out infinite;
 }
 
 
