@@ -309,19 +309,17 @@ button {
 .countdown-hero {
   position: absolute;
   left: 50%;
-  top: 50%;
-  /* O ajusta según lo que necesites */
+  top: 50%;  /* O ajusta según lo que necesites */
   bottom: 0rem;
   transform: translateX(-50%);
   z-index: 6;
-  padding: 4em 4em;
-  /* Aumenta el padding para que el círculo no tape el texto */
+  padding: 4em 4em;  /* Aumenta el padding para que el círculo no tape el texto */
   text-align: center;
   min-width: 260px;
   max-width: 95vw;
   width: auto;
   background: transparent;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+ 
   overflow: visible;
 }
 
@@ -1399,8 +1397,7 @@ button {
     position: absolute;
     left: 50%;
     top: 50%;
-    border: 1.5px solid var(--white-alpha-color);
-    /* Borde blanco y fino */
+    border: 1.5px solid var(--white-alpha-color);    /* Borde blanco y fino */
     border-radius: 50%;
     background: transparent;
     pointer-events: none;
