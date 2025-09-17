@@ -509,6 +509,10 @@ button {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 252922f (subo página modelo)
 /* ********** Galería y Mi Historia ********** */
 
 
@@ -974,6 +978,35 @@ button {
 
 /* ********** RSVP  ********** */
 
+<<<<<<< HEAD
+=======
+
+/* Toque en móviles */
+@media (hover: none) and (pointer: coarse) {
+  .estilos-grid img:active {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsivo para tablets y móviles */
+@media (max-width: 768px) {
+  .estilos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .estilos-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .estilos-grid img {
+    height: 180px;
+  }
+}
+
+>>>>>>> 252922f (subo página modelo)
 .rsvp-bg-separator {
   /* Cambia este color por el que prefieras */
   background: var(--alternative-color) url('img/fondo-flores-doradas.png') center center no-repeat;
