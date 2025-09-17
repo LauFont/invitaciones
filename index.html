@@ -211,31 +211,11 @@
             <a href="https://www.instagram.com/buscaldiummi/" class="rsvp-btn" target="_blank">@buscaldiummi</a>
             <a href="https://www.instagram.com/ummiii1taaa/" class="rsvp-btn" target="_blank">@ummiii1taaa</a>
           </div>
-<<<<<<< HEAD
           <div class="rsvp-info">
             <hr class="rsvp-line">
           </div>
-=======
-
-          <!-- Caja Fiesta -->
-          <div class="location-box" id="comollegar">
-            <img src="icons/location.svg" alt="Fiesta" class="fiesta-icon1">
-            <h2 class="section-title">Fiesta</h2>
-            <p class="location-address">
-              Ruta Nacional 205 Km114,5, <br>
-              B7240 Lobos, Provincia de Buenos Aires
-            </p>
-            <div class="location-buttons">
-              <a href="https://maps.app.goo.gl/BjtBPfagdCHamfFs5" class="location-btn" target="_blank">¿Cómo llegar?</a>
-              <button class="location-btn" onclick="abrirModal('modalReserva')">Con reserva</button>
-            </div>
-          </div>
-
-
->>>>>>> 252922f (subo página modelo)
         </div>
 
-<<<<<<< HEAD
         <!-- Caja Regalos -->
         <div class="location-box" id="regalos">
           <img src="icons/gift-animado.gif" alt="Regalos" class="fiesta-icon">
@@ -246,208 +226,16 @@
           </p><br>
           <div class="location-buttons">
             <button class="location-btn" onclick="abrirModal('modalRegalos')">Mis Alias</button>
-=======
-          <!-- Caja vestimenta -->
-          <div class="rsvp" id="dresscode">
-            <img src="icons/dress.svg" alt="dresscode" class="fiesta-icon">
-            <h2 class="section-title">Dress Code</h2>
-            <p>Formal y elegante.<br>Por favor no usar rojo.</p>
-            <div class="location-buttons">
-              <button class="rsvp-btn" onclick="abrirModal('modalEstilo')">Sugerencias de estilo</button>
-            </div>
-            <div class="rsvp-info">
-              <hr class="rsvp-line">
-            </div>
-          </div>
-
-          <!-- Caja sugerir canción -->
-          <div class="location-box" id="cancion">
-            <img src="icons/musica - copia.svg" alt="Musica" class="fiesta-icon">
-            <h2 class="section-title">Música</h2>
-            <p class="location-address">¿Qué canciones son infaltables?<br>Ayudame con la selección de canciones</p>
-            <div class="location-buttons">
-              <a href="https://open.spotify.com/intl-es/artist/13Aw4kvMgRhqQQndVGx9dc" class="location-btn"
-                target="_blank">Ir a Spotify</a>
-              <button class="location-btn" onclick="abrirModal('modalCancion')">Sugerir canción</button>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <a href="#top" class="back-to-top" aria-label="Volver al inicio">
-        <i class="fa-solid fa-chevron-up"></i>
-      </a>
-
-      <!-- SECCIÓN: Fotos y Regalos -->
-      <section class="rsvp-location-bg">
-        <div class="rsvp-location-flex">
-
-          <!-- Caja Fotos -->
-          <div class="rsvp" id="fotos">
-            <img src="icons/photos.svg" alt="fotos" class="fiesta-icon">
-            <h2 class="section-title">Fotos</h2>
-            <p>¡Preparate para mi fiesta!<br>Etiquetame en Instagram con mi #hashtag en tus fotos y videos.</p>
-            <div class="location-buttons">
-              <a href="https://www.instagram.com/" class="rsvp-btn" target="_blank">#15sofia</a>
-              <a href="https://www.instagram.com/" class="rsvp-btn" target="_blank">Ver Fotos</a>
-            </div>
-            <div class="rsvp-info">
-              <hr class="rsvp-line">
-            </div>
-          </div>
-
-          <!-- Caja Regalos -->
-          <div class="location-box" id="regalos">
-            <img src="icons/gift-animado.gif" alt="Regalos" class="fiesta-icon">
-            <h2 class="section-title">Regalos</h2>
-            <p class="location-address">
-              El mejor regalo es que me acompañes en mi gran día,<br>
-              pero si deseás hacerme un regalo aquí te dejo los datos.
-            </p><br>
-            <div class="location-buttons">
-              <button class="location-btn" onclick="abrirModal('modalRegalos')">Cuenta Bancaria</button>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- MODALES -->
-      <!-- Modal Confirmar Asistencia -->
-      <div id="modalConfirmar" class="modal">
-        <div class="modal-contenido">
-          <span class="cerrar" onclick="cerrarModal('modalConfirmar')">&times;</span>
-          <img src="icons/calendar.svg" alt="icono calendario" class="icono-modal-cancion">
-          <h2 class="section-title">Confirmar asistencia</h2>
-
-          <form class="modal-form-rsvp"
-            action="https://script.google.com/macros/s/AKfycbzXmPdbKa1jQKCwZ8CmJeywsCQJYBz7iPc7GmQQXroixNHvXJ9kgyt8wnrsJ-O-MIJQ5Q/exec"
-            method="POST" target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalConfirmar');">
-
-            <input type="text" name="NOMBRE Y APELLIDO" placeholder="Nombre y Apellido" class="input-cancion" required>
-            <input type="text" name="DNI" placeholder="Tu DNI sin puntos" class="input-cancion" required>
-            <input type="tel" name="TELÉFONO" placeholder="Tu teléfono" class="input-cancion" required>
-
-            <div class="modal-rsvp-group">
-              <p>¿Asistirás?</p>
-              <label><input type="radio" name="CONFIRMACIÓN" value="Sí, ahí estaré 🥳" required> Sí, ahí estaré
-                🥳</label>
-              <label><input type="radio" name="CONFIRMACIÓN" value="No podré asistir 😭"> No podré asistir 😭</label>
-            </div>
-
-            <div class="modal-rsvp-group">
-              <p>¿Alguna restricción alimentaria?</p>
-              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="No" required> No</label>
-              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="Sí, soy celíaco"> Sí, soy celíaco</label>
-              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="Sí, soy vegano"> Sí, soy vegano</label>
-              <label><input type="radio" name="RESTRICCIÓN ALIMENTARIA" value="Sí, soy vegetariano"> Sí, soy
-                vegetariano</label>
-            </div>
-
-            <div class="modal-rsvp-group">
-              <p>¿Necesitás traslado?</p>
-              <label><input type="radio" name="TRASLADO" value="Sí" required> Sí, reservame un asiento.</label>
-              <label><input type="radio" name="TRASLADO" value="No, iré por mi cuenta"> No, iré por mi cuenta</label>
-            </div>
-
-            <button type="submit" class="modal-btn-gris">ENVIAR</button>
-          </form>
-        </div>
-      </div>
-      <iframe name="hidden_iframe" style="display:none;"></iframe>
-
-      <!-- Modal Estilo -->
-      <div id="modalEstilo" class="modal">
-        <div class="modal-contenido">
-          <span class="cerrar" onclick="cerrarModal('modalEstilo')">&times;</span>
-          <img src="icons/dress.svg" alt="Icono música" class="icono-modal-cancion">
-          <h2 class="section-title">Sugerencias de estilos</h2>
-          <div class="estilos-grid">
-            <img src="img/drees code/dress-green-removebg-preview.png" alt="Estilo 1">
-            <img src="img/drees code/vestido-de-noche-negro-removebg-preview.png" alt="Estilo 2">
-            <img src="img/drees code/vestido-corto-brillante.png" alt="Estilo 3">
-            <img src="img/drees code/hombre-con-esmoquin-removebg-preview.png" alt="Estilo 4">
-            <img src="img/drees code/hombre-traje-corbata.png" alt="Estilo 5">
-            <img src="img/drees code/hombre-traje-azul.png" alt="Estilo 6">
->>>>>>> 252922f (subo página modelo)
           </div>
         </div>
       </div>
     </section>
     <br> <br>
 
-<<<<<<< HEAD
     <section id="mihistoria" class="section-mi-historia">
       <br><br><br>
       <p class="section-parrafo-mi-historia">Los mejores momentos son cuando hay sonrisas.</p><br>
       <h2 class="section-title-mi-historia-titulo">Umma Buscaldi</h2><br>
-=======
-      <!-- Modal Reserva -->
-      <div id="modalReserva" class="modal">
-        <div class="modal-contenido modal-reserva">
-          <span class="cerrar" onclick="cerrarModal('modalReserva')">&times;</span>
-          <img src="icons/icono_combi.png" alt="Icono música" class="icono-modal-cancion">
-          <h2 class="section-title cancion-titulo">Tu reserva</h2>
-          <hr class="rsvp-line">
-          <p class="cancion-texto">Si reservaste asiento, ponemos a tu servicio el transporte.</p>
-          <p>Salimos las 18 hs. desde aquí.</p>
-          <div>
-            <a href="https://maps.app.goo.gl/ZVPaNyVmv2rQup1f8" class="modal-btn-gris" target="_blank">Lugar de
-              Partida</a>
-          </div>
-          </form><br><br>
-        </div>
-      </div>
-      <iframe name="hidden_iframe" style="display:none;"></iframe>
-
-      <!-- Modal Sugerir Canción -->
-      <div id="modalCancion" class="modal">
-        <div class="modal-contenido modal-cancion">
-          <span class="cerrar" onclick="cerrarModal('modalCancion')">&times;</span>
-          <img src="icons/musica.svg" alt="Icono música" class="icono-modal-cancion">
-          <h2 class="section-title cancion-titulo">Sugerir canciones</h2>
-          <hr class="rsvp-line">
-
-          <form id="cancionForm"
-            action="https://script.google.com/macros/s/AKfycbzXmPdbKa1jQKCwZ8CmJeywsCQJYBz7iPc7GmQQXroixNHvXJ9kgyt8wnrsJ-O-MIJQ5Q/exec"
-            method="POST" target="hidden_iframe" onsubmit="enviarFormulario(); cerrarModal('modalCancion');">
-
-            <p class="cancion-texto">¡Ayudame a crear la mejor playlist para mi fiesta!</p>
-            <input type="text" name="CANCIÓN SUGERIDA" placeholder="Nombre de la canción" required
-              class="input-artista">
-            <input type="text" name="ARTISTA" placeholder="Nombre del artista" required class="input-artista">
-            <button type="submit" class="modal-btn-gris">ENVIAR</button>
-          </form>
-        </div>
-      </div>
-      <iframe name="hidden_iframe" style="display:none;"></iframe>
-
-
-      <!-- Modal Regalos -->
-      <div id="modalRegalos" class="modal">
-        <div class="modal-contenido">
-          <span class="cerrar" onclick="cerrarModal('modalRegalos')">&times;</span>
-          <img src="icons/mail.svg" alt="Icono regalos" class="icono-modal-cancion">
-          <h2 class="section-title">Datos para regalos</h2>
-          <h3>Billetera digital</h3>
-          <p>Enviá el dinero desde el siguiente link:</p>
-          <a href="https://www.mercadopago.com.ar/" class="modal-btn-gris" target="_blank">ENVIAR DINERO</a>
-          <br><br>
-          <hr>
-          <h3>Datos Bancarios</h3>
-          <p><strong>CBU/ALIAS:</strong> juan.cumple.mp</p>
-          <p><strong>N° de Cuenta:</strong> 1234-5678-9012</p>
-          <p><strong>Titular:</strong> Juan Fulano</p>
-          <p><strong>Banco:</strong> Banco del Amor</p>
-        </div>
-      </div>
-
-      <a href="#top" class="back-to-top" aria-label="Volver al inicio">
-        <i class="fa-solid fa-chevron-up"></i>
-      </a>
-
->>>>>>> 252922f (subo página modelo)
     </section>
 
     <!-- MODALES -->
